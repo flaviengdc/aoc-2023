@@ -5,9 +5,7 @@ const INPUT: &str = include_str!("./input");
 
 pub fn puzzle1() {
     let calibrations: i32 = read_input(INPUT)
-        .map(|line| {
-            return line.chars().filter(|char| char.is_numeric()).collect();
-        })
+        .map(|line| line.chars().filter(|char| char.is_numeric()).collect())
         .map(|numbers| get_line_number(numbers))
         .sum::<i32>();
     println!("{:?}", calibrations);
