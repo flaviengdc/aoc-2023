@@ -1,6 +1,7 @@
 use std::env;
 mod day01;
 mod day02;
+mod day03;
 mod utils;
 
 fn main() {
@@ -20,6 +21,10 @@ fn main() {
         2 => {
             day02::puzzle1();
             day02::puzzle2();
+        }
+        3 => {
+            day03::puzzle1();
+            day03::puzzle2();
         }
         _ => {
             panic!("unkown day {}", day)
