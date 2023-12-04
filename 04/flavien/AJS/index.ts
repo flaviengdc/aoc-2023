@@ -2,8 +2,7 @@ import assert from "node:assert";
 
 function decode(message: string) {
   function toReverse(s: string) {
-    const copy = s;
-    return copy.split("").reverse().join("");
+    return s.split("").reverse().join("");
   }
 
   return message
